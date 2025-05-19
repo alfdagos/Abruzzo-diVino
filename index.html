@@ -1,0 +1,91 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section -->
+<section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('{{ '/assets/vigneti_colline.jpeg' | relative_url }}')">
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <div class="text-center text-white p-4 max-w-3xl">
+      <h1 class="text-4xl md:text-6xl font-serif font-bold mb-4">Abruzzo diVino</h1>
+      <p class="text-xl md:text-2xl mb-8">Scopri le eccellenze enogastronomiche e il meraviglioso territorio abruzzese</p>
+      <a href="#intro" class="bg-burgundy hover:bg-dark-burgundy text-white px-6 py-3 rounded-md text-lg inline-flex items-center gap-2">
+        Esplora
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Intro Section -->
+<section id="intro" class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl md:text-4xl font-serif text-center mb-8 text-burgundy">Benvenuti in Abruzzo diVino</h2>
+    <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+      <p class="mb-4">
+        L'Abruzzo è una terra generosa e aspra, conosciuta non solo per il suo mare e le sue montagne, ma anche per la straordinaria qualità dei suoi vini e prodotti gastronomici. Una regione dove tradizione e innovazione si fondono per creare esperienze di gusto uniche.
+      </p>
+      <p>
+        Attraverso questo portale vi guideremo alla scoperta delle eccellenze enogastronomiche abruzzesi e dei paesaggi mozzafiato che caratterizzano questa meravigliosa regione, dalle colline vitate alle maestose montagne, passando per borghi ricchi di storia e tradizione.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-16 px-4 bg-beige">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Vini -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('{{ '/assets/vigneti_abruzzo.jpeg' | relative_url }}')"></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wine text-burgundy"><path d="M8 22h8"></path><path d="M7 10h10"></path><path d="M12 15v7"></path><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"></path></svg>
+            <h3 class="text-xl font-bold">I Vini d'Abruzzo</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Dal Montepulciano al Trebbiano, dal Cerasuolo al Pecorino, scopri i vini che hanno reso l'Abruzzo famoso nel mondo.
+          </p>
+          <a href="{{ '/vini/' | relative_url }}" class="bg-burgundy hover:bg-dark-burgundy text-white px-4 py-2 rounded inline-block">
+            Scopri di più
+          </a>
+        </div>
+      </div>
+
+      <!-- Gastronomia -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('{{ '/assets/arrosticini.jpeg' | relative_url }}')"></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-utensils-crossed text-burgundy"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"></path><path d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"></path><path d="m2.1 21.8 6.4-6.3"></path><path d="m19 5-7 7"></path></svg>
+            <h3 class="text-xl font-bold">Gastronomia</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Dagli arrosticini agli spaghetti alla chitarra, scopri i sapori autentici della tradizione culinaria abruzzese.
+          </p>
+          <a href="{{ '/gastronomia/' | relative_url }}" class="bg-burgundy hover:bg-dark-burgundy text-white px-4 py-2 rounded inline-block">
+            Scopri di più
+          </a>
+        </div>
+      </div>
+
+      <!-- Territorio -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('{{ '/assets/vigneti_colline.jpeg' | relative_url }}')"></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mountain text-burgundy"><path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg>
+            <h3 class="text-xl font-bold">Il Territorio</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Dalle colline vitate alle maestose montagne, scopri i paesaggi mozzafiato che rendono l'Abruzzo una terra unica.
+          </p>
+          <a href="{{ '/territorio/' | relative_url }}" class="bg-burgundy hover:bg-dark-burgundy text-white px-4 py-2 rounded inline-block">
+            Scopri di più
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

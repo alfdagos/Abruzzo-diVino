@@ -1,0 +1,51 @@
+title: Abruzzo diVino
+description: Scopri le eccellenze enogastronomiche e il meraviglioso territorio abruzzese
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
+  - todo.md
+
+# Collections
+collections:
+  vini:
+    output: true
+  gastronomia:
+    output: true
+  territorio:
+    output: true
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "vini"
+    values:
+      layout: "vino"
+  - scope:
+      path: ""
+      type: "gastronomia"
+    values:
+      layout: "piatto"
+  - scope:
+      path: ""
+      type: "territorio"
+    values:
+      layout: "territorio"
