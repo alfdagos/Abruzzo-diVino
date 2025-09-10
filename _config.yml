@@ -1,7 +1,7 @@
 title: Abruzzo diVino
 description: Scopri le eccellenze enogastronomiche e il meraviglioso territorio abruzzese
-baseurl: ""
-url: ""
+baseurl: "Abruzzo-diVino" 
+url: "https://alfdagos.github.io"
 
 # Build settings
 markdown: kramdown
